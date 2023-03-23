@@ -9,12 +9,14 @@
 <body>
 
     <h1>Registion Page</h1>
-    <form action="" method="POST"></form>
+    <form action="" method="POST">{% csrf_token%}
           
-        <br><input type ="text" name ="username" id=" username" placeholder="Enter username" required /></br>
-        <br><input type ="email" name ="email" id=" email" placeholder="Enter Email " required /></br>
-        <br><input type ="number" name ="username" id=" username" placeholder="Enter number" required /></br>
+        <br><input type ="text" name ="username" id= "username" placeholder="Enter username" required ></br>
+        <br><input type ="email" name ="email" id=" email" placeholder="Enter Email " required></br>
+        <br><input type ="password" name ="password"  placeholder="Enter password" required></br>
         
-        <br><input type="submit" value="Sign In"></br>
+        <br><button type='submit'>SignIn</button><br>
+
+    </form>    
 </body>
 </html>

@@ -13,13 +13,13 @@
     </div>
     <div class="container">
         <div class="formbx">
-            <form action="">
+            <form action=""method="POST">{% csrf_token%}
                 <p> username:</p>
                 <input type="text" name="" placeholder="username">
                 <p>Password:</p>
                 <input type="password" placeholder="password"><br>
 
-                <br><input type="submit" value="login in"></form></br>
+                <br><button type='submit'>SignIn</button></br>
             </form>
         </div>
     </div>
